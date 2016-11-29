@@ -23,6 +23,11 @@
         "symfony/polyfill-php70": "~1.3.0",
         "symfony/polyfill-php71": "~1.3.0"
     },
+    "autoload": {
+        "psr-4": {
+            "Tea\\Future\\": ""
+        },
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "0.1.0-dev"
