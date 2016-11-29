@@ -1,4 +1,4 @@
-# Future
+# Tea Future
 
 This package backports features found in the latest PHP versions.
 It provides some of the new features in PHP 5.4+, 5.5+ ,5.6+, 7.0+ and 7.1+ to lower PHP versions.
