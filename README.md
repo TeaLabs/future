@@ -26,16 +26,12 @@ Future provides many of the new PHP functions and classes introduces in PHP 5.4 
 Backported features by PHP version:
 
 ### PHP 7.1+
-
-##### Functions
-
+Functions:-
 - [`is_iterable`](http://php.net/is_iterable)
 
 
 ### PHP 7.0+
-
 Functions:-
-
 - [`intdiv`](http://php.net/intdiv)
 - [`preg_replace_callback_array`](http://php.net/preg_replace_callback_array)
 - [`error_clear_last`](http://php.net/error_clear_last)
@@ -45,7 +41,8 @@ Classes:-
 
 - [`*Error`](http://php.net/Error) and throwable classes.
 
-### Compatibility notes
+
+#### Compatibility notes
 
 To write portable code between PHP5 and PHP7, some care must be taken:
 - `\*Error` exceptions must be caught before `\Exception`;
