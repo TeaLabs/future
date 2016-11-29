@@ -27,21 +27,21 @@ Backported features by PHP version:
 
 ## 1. PHP 7.1
 
-### Functions
+#### Functions
 
 - [`is_iterable`](http://php.net/is_iterable)
 
 
 ## 2. PHP 7.0
 
-### Functions
+#### Functions
 
 - [`intdiv`](http://php.net/intdiv)
 - [`preg_replace_callback_array`](http://php.net/preg_replace_callback_array)
 - [`error_clear_last`](http://php.net/error_clear_last)
 - `random_bytes` and `random_int` (from [paragonie/random_compat](https://github.com/paragonie/random_compat))
 
-### Classes
+#### Classes
 
 - [`*Error`](http://php.net/Error) and throwable classes.
 
