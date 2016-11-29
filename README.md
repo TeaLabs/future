@@ -9,31 +9,64 @@ It provides some of the new features in PHP 5.4+, 5.5+ ,5.6+, 7.0+ and 7.1+ to l
 
 Requires [composer][] to install and load the dependencies.
 
-To install, run:
+After setting up composer, to install future run:
 
     composer require tea/future
 
-Then [composer][]'s autoloader:
+Then load [composer][]'s autoloader:
 
     require 'vendor/autoload.php';
 
+-----------------------------------------
 
-## Features
+# Features
 
-### 1. PHP 7.0+
+## 1. PHP 7.1
 
-
-
-lable to your project after calling Composer's autoloader.
+- [`is_iterable`](http://php.net/is_iterable)
 
 
-- `symfony/polyfill-php54` for using the PHP 5.4 functions.
-- `symfony/polyfill-php55` for using the PHP 5.5 functions.
-- `symfony/polyfill-php56` for using the PHP 5.6 functions.
-- `symfony/polyfill-php70` for using the PHP 7.0 functions.
-- `symfony/polyfill-php71` for using the PHP 7.1 functions.
+## 2. PHP 7.0
 
-For more info on what is available, checkout [symfony-polyfill-phpXX](https://github.com/symfony/polyfill).
+- [`intdiv`](http://php.net/intdiv)
+- [`preg_replace_callback_array`](http://php.net/preg_replace_callback_array)
+- [`error_clear_last`](http://php.net/error_clear_last)
+- `random_bytes` and `random_int` (from [paragonie/random_compat](https://github.com/paragonie/random_compat))
+- [`*Error` throwable classes](http://php.net/Error)
+
+### Compatibility notes
+
+To write portable code between PHP5 and PHP7, some care must be taken:
+- `\*Error` exceptions must be caught before `\Exception`;
+- after calling `error_clear_last()`, the result of `$e = error_get_last()` must be
+  verified using `isset($e['message'][0])` instead of `null === $e`.
+
+
+## 3. PHP 5.6
+
+- [`hash_equals`](http://php.net/hash_equals)  (part of [hash](http://php.net/hash) extension)
+- [`ldap_escape`](http://php.net/ldap_escape) (part of [ldap](http://php.net/ldap) extension)
+
+
+## 4. PHP 5.5
+
+- [`boolval`](http://php.net/boolval)
+- [`json_last_error_msg`](http://php.net/json_last_error_msg)
+- [`array_column`](http://php.net/array_column)
+- [`hash_pbkdf2`](http://php.net/hash_pbkdf2)
+- `password_*` functions (from [ircmaxell/password_compat](https://github.com/ircmaxell/password_compat))
+
+
+## 5. PHP 5.4
+
+- [`trait_exists`](http://php.net/trait_exists)
+- [`class_uses`](http://php.net/class_uses)
+- [`hex2bin`](http://php.net/hex2bin)
+- [`session_register_shutdown`](http://php.net/session_register_shutdown)
+
+-----------------
+
+You can find more information on the symfony polyfills [here][symfony polyfills].
 
 
 ## License
