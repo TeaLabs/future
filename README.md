@@ -7,7 +7,7 @@ It provides many of the new features in PHP 5.4+, 5.5+ ,5.6+, 7.0+ and 7.1+ to l
 
 ## Installation
 
-[Composer][] required to install and load the dependencies.
+[Composer][] is required to install and load the dependencies.
 
 On your composer managed project, run:
 
