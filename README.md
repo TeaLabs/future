@@ -3,7 +3,7 @@
 This package backports features found in the latest PHP versions.
 It provides some of the new features in PHP 5.4+, 5.5+ ,5.6+, 7.0+ and 7.1+ to lower PHP versions.
 
-Most of these features are provided through the following Symfony polyfills:-
+Most of these features are provided through the following Symfony polyfill packages:-
 
 - `symfony/polyfill-php54` for using the PHP 5.4 functions.
 - `symfony/polyfill-php55` for using the PHP 5.5 functions.
@@ -11,13 +11,11 @@ Most of these features are provided through the following Symfony polyfills:-
 - `symfony/polyfill-php70` for using the PHP 7.0 functions.
 - `symfony/polyfill-php71` for using the PHP 7.1 functions.
 
-Checkout [Symfony polyfill](https://github.com/symfony/polyfill) for more on this.
-
 ## Installation
 
 Requires [Composer](https://getcomposer.org/) to install and load the dependencies.
 
-To install with composer:
+To install (with composer) run:
 
     composer require tea/future
 
